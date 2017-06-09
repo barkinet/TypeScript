@@ -30,6 +30,9 @@ f(1); f(true).length;
 const z = {};
 z.x = 1;
 
+/** @typedef {string} N.Str */
+import M = N; // Error: @typedef does not create namespaces in TypeScript code.
+
 
 //// [jsdocInTypeScript.js]
 var T = (function () {
@@ -51,3 +54,5 @@ f(true).length;
 /** @type {{ x?: number }} */
 var z = {};
 z.x = 1;
+/** @typedef {string} N.Str */
+var M = N; // Error: @typedef does not create namespaces in TypeScript code.

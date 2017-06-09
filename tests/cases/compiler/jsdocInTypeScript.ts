@@ -28,3 +28,6 @@ f(1); f(true).length;
 /** @type {{ x?: number }} */
 const z = {};
 z.x = 1;
+
+/** @typedef {string} N.Str */
+import M = N; // Error: @typedef does not create namespaces in TypeScript code.
